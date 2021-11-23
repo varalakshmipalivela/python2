@@ -1,11 +1,9 @@
-start = 1
-stop = 2
-current_num = stop
-for row in range(2, 6):
-    for col in range(start, stop):
-        current_num -= 1
-        print current_num,;
-    print("")
-    start = stop
-    stop += row
-    current_num = stop
+data = data2 = ""
+with open('abc.txt') as fp:
+    data = fp.read()
+with open('test.txt') as fp:
+    data2 = fp.read()
+data += "\n"
+data += data2
+with open ('file3.txt', 'w') as fp:
+    fp.write(data)

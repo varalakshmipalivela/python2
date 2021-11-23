@@ -1,5 +1,6 @@
-a=5
-for i in range(a, 0, -1):
-    for j in range(0, i+1):
-        print j,
-    print"\n"
+fo = open("assignment.txt", "r+")
+str = fo.read(10);
+print "Read String is : ", str
+fo = open("assignment.txt", "wb")
+fo.write( "Python is a great language.\nYeah its great!!\n");
+fo.close()
